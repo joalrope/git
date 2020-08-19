@@ -31,7 +31,7 @@ function readLine() {
 
 function diagonalDifference(arr) {
     // Write your code here
-
+ 
 }
 
 function main() {
