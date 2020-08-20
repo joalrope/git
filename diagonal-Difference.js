@@ -31,8 +31,22 @@ function readLine() {
 
 function diagonalDifference(arr) {
     // Write your code here
- 
+
+    var mainDiag = 0;
+    var SecuDiag = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+           
+        mainDiag += parseInt(arr[i][i]);
+        console.log('i,i'+arr[i][i]);
+        SecuDiag+= parseInt(arr[i][arr.length-1-i]);
+        console.log('i,n-i'+arr[i][arr.length-1-i]);
+            
+    }
+    
+    return Math.abs(mainDiag - SecuDiag);
 }
+    
 
 function main() {
     const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
